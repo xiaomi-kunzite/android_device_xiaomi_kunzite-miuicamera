@@ -1,0 +1,33 @@
+From 4217926636ceae1a6102cb4de5c8656ac190d364 Mon Sep 17 00:00:00 2001
+From: Arian <arian.kulmer@web.de>
+Date: Sat, 29 Aug 2026 11:46:34 +0700
+Subject: [PATCH 8/9] Change com.android.camera.action.REVIEW to
+ android.provider.action.REVIEW
+
+Change-Id: I0025b573e5f8b21de6432d476a570169e5fa1930
+---
+ smali/A/c3.smali | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/smali/A/c3.smali b/smali/A/c3.smali
+index d00a217b..4b238e5e 100644
+--- a/smali/A/c3.smali
++++ b/smali/A/c3.smali
+@@ -85,7 +85,7 @@
+ 
+     const/4 v4, 0x0
+ 
+-    const-string v5, "com.android.camera.action.REVIEW"
++    const-string v5, "android.provider.action.REVIEW"
+ 
+     if-eqz v1, :cond_0
+ 
+@@ -129,7 +129,7 @@
+     :cond_1
+     new-array v1, v4, [Ljava/lang/Object;
+ 
+-    const-string v6, "gotoGallery: com.android.camera.action.REVIEW"
++    const-string v6, "gotoGallery: android.provider.action.REVIEW"
+ 
+     invoke-static {v3, v6, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+ 

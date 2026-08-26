@@ -1,18 +1,20 @@
-From 8b778186a9492d617e403738ecdce42e2977dbc5 Mon Sep 17 00:00:00 2001
+From 95627624fd95b98ccaa59b9b29dfd4897c2692d2 Mon Sep 17 00:00:00 2001
 From: AdarshGrewal <adarshgrewal@gmail.com>
 Date: Sun, 7 Jun 2026 15:59:45 +0530
-Subject: [PATCH 4/7] Stub out call to jcodec MP4 post-processing
+Subject: [PATCH 4/9] Stub out call to jcodec MP4 post-processing
 
 * this seems to be only for MP4 cover tag
+
+Change-Id: Id85eb097b5482347bb789c99b32fe47994587ae6
 ---
- smali_classes6/Fj/e.smali | 270 +-------------------------------------
- 1 file changed, 1 insertion(+), 269 deletions(-)
+ smali_classes6/Fj/e.smali | 269 +-------------------------------------
+ 1 file changed, 1 insertion(+), 268 deletions(-)
 
 diff --git a/smali_classes6/Fj/e.smali b/smali_classes6/Fj/e.smali
-index 068d694a..922aa20b 100644
+index 068d694a..24408d38 100644
 --- a/smali_classes6/Fj/e.smali
 +++ b/smali_classes6/Fj/e.smali
-@@ -5,275 +5,7 @@
+@@ -5,275 +5,8 @@
  
  # direct methods
  .method public static a(Ljava/io/File;LFj/b;)V
@@ -278,7 +280,7 @@ index 068d694a..922aa20b 100644
 -    :cond_5
 -    :goto_4
      return-void
--
+ 
 -    :catchall_3
 -    move-exception p0
 -
@@ -289,6 +291,3 @@ index 068d694a..922aa20b 100644
 -
 -    throw p0
  .end method
--- 
-2.54.0
-
