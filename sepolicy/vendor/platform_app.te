@@ -10,7 +10,6 @@ allow platform_app app_data_file:file execute;
 
 # Properties
 get_prop(platform_app, vendor_audio_prop)
-get_prop(platform_app, vendor_camera_p3enable_prop)
 get_prop(platform_app, vendor_camera_sensor_prop)
 get_prop(platform_app, vendor_display_prop)
 get_prop(platform_app, vendor_panel_info_prop)
